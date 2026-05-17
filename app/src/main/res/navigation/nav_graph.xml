@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.aksharadeep.tutor.ui.DashboardFragment"
+        android:label="Home" />
+    <fragment
+        android:id="@+id/syllabusFragment"
+        android:name="com.aksharadeep.tutor.ui.SyllabusFragment"
+        android:label="Syllabus">
+        <action
+            android:id="@+id/action_syllabus_to_quiz"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.aksharadeep.tutor.ui.QuizFragment"
+        android:label="Quiz">
+        <argument android:name="chapterId" app:argType="integer" android:defaultValue="1" />
+        <argument android:name="subject" app:argType="string" android:defaultValue="Science" />
+        <argument android:name="chapterName" app:argType="string" android:defaultValue="Chapter" />
+    </fragment>
+    <fragment
+        android:id="@+id/strengthMapFragment"
+        android:name="com.aksharadeep.tutor.ui.StrengthMapFragment"
+        android:label="Strength" />
+    <fragment
+        android:id="@+id/dailyGoalFragment"
+        android:name="com.aksharadeep.tutor.ui.DailyGoalFragment"
+        android:label="Goal" />
+</navigation>

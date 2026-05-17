@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/dashboardFragment" android:icon="@drawable/ic_home" android:title="Home" />
+    <item android:id="@+id/syllabusFragment" android:icon="@drawable/ic_book" android:title="Syllabus" />
+    <item android:id="@+id/strengthMapFragment" android:icon="@drawable/ic_chart" android:title="Strength" />
+    <item android:id="@+id/dailyGoalFragment" android:icon="@drawable/ic_goal" android:title="Goal" />
+</menu>
